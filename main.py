@@ -3,7 +3,9 @@ from task1 import read_and_display_data
 from task2 import calculate_xTx
 from task3 import cal_det2to2
 from task4 import cal_inverse
-from task5 import calculate_xTy
+from task5 import cal_xTy
+from task6 import cal_beta
+from task7 import cal_new_y
 
 
 def main():
@@ -13,7 +15,9 @@ def main():
     XtX = calculate_xTx(x)
     det = cal_det2to2(XtX)
     inv = cal_inverse(XtX , det)
-    xTy = calculate_xTy(x, y)
+    xTy = cal_xTy(x, y)
+    beta = cal_beta(inv, xTy)
+    new_y = cal_new_y(beta, x)
     print("\nAll tasks completed!")
 
 

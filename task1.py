@@ -13,7 +13,7 @@ def read_and_display_data(file_path):
 
     
     y_values = df["قیمت طلا (تومان)"].values
-    Y = np.array([[int(i) , 1] for i in y_values])
+    Y = np.array([[int(i)] for i in y_values])
 
 
  
