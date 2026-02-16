@@ -6,6 +6,7 @@ from task4 import cal_inverse
 from task5 import cal_xTy
 from task6 import cal_beta
 from task7 import cal_new_y
+from task8 import cal_plot
 
 
 def main():
@@ -18,6 +19,7 @@ def main():
     xTy = cal_xTy(x, y)
     beta = cal_beta(inv, xTy)
     new_y = cal_new_y(beta, x)
+    cal_plot(y, new_y)
     print("\nAll tasks completed!")
 
 
